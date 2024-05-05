@@ -13,7 +13,7 @@ function getPath( href ){
     return ( function(){
       let pathNow = href.split( "/" ).slice( 3 ).join( "/" ).split( "?" )[0]
       if( pathNow.indexOf( "." ) == -1 ){
-        pathNow += ".html"
+        pathNow += "index.html"
       }
       return pathNow
     })() || "/index.html"
